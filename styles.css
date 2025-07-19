@@ -1,0 +1,55 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Dark theme */
+
+body {
+background-color: #383636;
+color: #FFFFFF;
+padding-top: 60px; /* space for fixed navbar */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  justify-items: end;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+/* Nav list styling */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+  nav ul a{
+  display: inline-block;
+  color: #e0e0e0; /* light color for text */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border: none;
+
+}
+
+nav a:hover {
+ /* color for hover effect */
+  background-color: #2d2d2d;
+  color: #4f46e5;
+}
