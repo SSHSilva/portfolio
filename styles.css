@@ -11,7 +11,7 @@
 body {
 background-color: #383636;
 color: #FFFFFF;
-padding-top: 60px; /* space for fixed navbar */
+padding-top: 70px; /* space for fixed navbar */
 }
 
 nav {
@@ -52,4 +52,34 @@ nav a:hover {
  /* color for hover effect */
   background-color: #2d2d2d;
   color: #4f46e5;
+  cursor: pointer;
+}
+
+.neon-title {
+  color: #ff4aff;
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-shadow:
+    0 0 1px #ff4aff,
+    0 0 3px #ff4aff,
+    0 0 5px #e600e6;
+}
+
+.neon-title:hover {
+  text-shadow:
+    0 0 5px #ff4aff,
+    0 0 10px #ff4aff,
+    0 0 40px #e600e6;
+    cursor: pointer;
+}
+
+h3 {
+  color: #cccccc;
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.logo {
+  background: none;
 }
