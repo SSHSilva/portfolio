@@ -11,7 +11,10 @@
 body {
 background-color: #383636;
 color: #FFFFFF;
-padding-top: 70px; /* space for fixed navbar */
+padding-top: 80px; /* space for fixed navbar */
+min-height: 100vh;
+display: flex;
+flex-direction: column;
 }
 
 nav {
@@ -64,6 +67,8 @@ nav a:hover {
     0 0 1px #ff4aff,
     0 0 3px #ff4aff,
     0 0 5px #e600e6;
+  transition: text-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
 }
 
 .neon-title:hover {
@@ -78,8 +83,34 @@ h3 {
   color: #cccccc;
   text-align: center;
   font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 2rem;
+  text-shadow: 0 0 1px #b374b3;
 }
 
 .logo {
   background: none;
+}
+
+main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: auto; /* Pushes it to the bottom */
+  padding-bottom: 2rem;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain
 }
