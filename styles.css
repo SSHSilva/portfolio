@@ -151,6 +151,8 @@ p {
 }
 
 footer p {
+  display: flex;
+  justify-content: center;
   font-size: 1rem;
   max-width: 800px;
   margin: 2rem auto;
@@ -186,5 +188,24 @@ footer p {
   box-shadow: 0 0 12px #ff4affcc;
   transform: scale(1.1); /* Makes the icon grow on hover */
   transition: transform 0.3s ease;
+}
+
+.skills-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.skills-list li {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.skills-list li::marker {
+  content: '♦';
+  color: #ff4aff;
+  font-size: 1.2rem;
 }
 
