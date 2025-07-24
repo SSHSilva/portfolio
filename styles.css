@@ -107,14 +107,18 @@ main{
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-top: auto; /* Pushes it to the bottom */
   padding-bottom: 2rem;
+
 }
 
+
+
 .logo {
-  width: 100px;
-  height: auto;
-  object-fit: contain
+  height: 80px;   /* adjust as needed */
+  width: auto;    /* keeps image proportions */
+  object-fit: contain;
+  padding: 5px;   /* optional: adds spacing between logos */
+  
 }
 
 .title {
