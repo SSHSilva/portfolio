@@ -141,7 +141,7 @@ h3 {
   color:  #cccccc;
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   margin-top: 1rem;
-  margin-left: 1rem;
+  margin-left: 0.75rem;
   text-shadow: 0 0 1px #b374b3;
   font-family: 'Orbitron', sans-serif;
 }
@@ -213,3 +213,52 @@ footer p {
   font-size: 1.2rem;
 }
 
+.contact-info {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  color: #e0e0e0;
+}
+.contact-info form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact-info label {
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+  color: #e0e0e0;
+}
+
+.contact-info input[type="text"],
+.contact-info input[type="email"],
+.contact-info textarea {
+  width: 100%;                /* full width */
+  padding: 16px;
+  font-size: 1.05rem;
+  border: 1px solid #555;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.contact-info textarea {
+  min-height: 180px; /* makes the message box taller */
+}
+
+.contact-info input[type="submit"] {
+  background-color: #ff4aff;
+  color: #1e1e1e;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-info input[type="submit"]:hover {
+  background-color: #e600e6;
+}
